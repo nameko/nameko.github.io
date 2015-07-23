@@ -12,9 +12,13 @@ h1, h2, h3 {
     padding: 0 0 10px 0;
 }
 
-h1 em {
+.title em {
     font-family: "Lato", "proxima-nova", "Helvetica Neue", Arial, sans-serif;
     font-size: 43%;
+}
+
+h1.title {
+    margin-bottom: 0;
 }
 
 a {
