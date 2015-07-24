@@ -5,7 +5,7 @@
 -->
 <html>
 <head>
-<title>Nameko</title>
+<title>{% block title %}Nameko{% endblock %}</title>
 
 <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/styles/github.min.css">
 <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic|Lora:400" rel="stylesheet" type="text/css">
@@ -32,60 +32,9 @@ ga('send', 'pageview');
 <body>
 
 <div class="content">
+{% block content %}
 
-<h1 class="title">Nameko
-<em>[nah-meh-koh]</em>
-</h1>
-
-<div class="menu">
-<ul>
-    <li>overview</li>
-    <li><a class="external" href="https://nameko.readthedocs.org">documentation</a></li>
-    <li><a href="community.html">community</a></li>
-    <li><a class="external" href="https://github.com/onefinestay/nameko">source code</a></li>
-</ul>
-</div>
-
-<p>
-Nameko is a microservices framework for Python that lets service developers concentrate on application logic and encourages testability.
-</p>
-
-<p>
-A nameko service is just a class:
-</p>
-
-
-<pre><code class="python"># helloworld.py
-
-from nameko.rpc import rpc
-
-class GreetingService(object):
-    name = "greeting_service"
-
-    @rpc
-    def hello(self, name):
-        return "Hello, {}!".format(name)
-</code></pre>
-
-<p>
-You can run it in a shell:
-</p>
-
-<pre><code class="bash">$ nameko run helloworld
-starting services: greeting_service
-...
-</code></pre>
-
-<p>
-And play with it from another:
-</p>
-
-<pre><code class="python">$ nameko shell
->>> n.rpc.greeting_service.hello(name="Matt")
-u'Hello, Matt!'
-</code></pre>
-
-
+{% endblock content %}
 
 </div>
 

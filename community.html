@@ -33,58 +33,31 @@ ga('send', 'pageview');
 
 <div class="content">
 
-<h1 class="title">Nameko
-<em>[nah-meh-koh]</em>
+<title>Nameko :: community</title>
+
+<h1 class="title">Community
 </h1>
 
 <div class="menu">
 <ul>
-    <li>overview</li>
+    <li><a href="/">overview</a></li>
     <li><a class="external" href="https://nameko.readthedocs.org">documentation</a></li>
-    <li><a href="community.html">community</a></li>
+    <li>community</li>
     <li><a class="external" href="https://github.com/onefinestay/nameko">source code</a></li>
 </ul>
 </div>
 
 <p>
-Nameko is a microservices framework for Python that lets service developers concentrate on application logic and encourages testability.
+Comments or questions? Get in touch!
 </p>
 
-<p>
-A nameko service is just a class:
-</p>
-
-
-<pre><code class="python"># helloworld.py
-
-from nameko.rpc import rpc
-
-class GreetingService(object):
-    name = "greeting_service"
-
-    @rpc
-    def hello(self, name):
-        return "Hello, {}!".format(name)
-</code></pre>
-
-<p>
-You can run it in a shell:
-</p>
-
-<pre><code class="bash">$ nameko run helloworld
-starting services: greeting_service
-...
-</code></pre>
-
-<p>
-And play with it from another:
-</p>
-
-<pre><code class="python">$ nameko shell
->>> n.rpc.greeting_service.hello(name="Matt")
-u'Hello, Matt!'
-</code></pre>
-
+<ul>
+    <li>
+        <a href="groups.google.com/forum/#!forum/nameko-dev">
+            nameko-dev google group
+        </a></li>
+    <li>IRC: #nameko on freenode</li>
+</ul>
 
 
 </div>
