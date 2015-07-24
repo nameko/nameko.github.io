@@ -35,6 +35,11 @@ a:hover {
     text-decoration: underline;
 }
 
+a.external:after {
+    content: url(/img/external_link.png);
+    margin: 0 0 0 5px;
+}
+
 .content {
     width: 800px;
     margin: auto;
@@ -42,7 +47,6 @@ a:hover {
 
 .menu ul {
     list-style-type: none;
-    width: 50%;
     padding-bottom: 15px;
 }
 
