@@ -16,14 +16,22 @@
 </div>
 
 <p>
-Comments or questions? Get in touch!
+Comments or questions? Find us on <a href="http://nameko.slack.com">#Slack</a> or <a href="http://groups.google.com/forum/#!forum/nameko-dev">Google Groups</a>.
 </p>
 
-<ul>
-    <li>
-        <a href="groups.google.com/forum/#!forum/nameko-dev">
-            nameko-dev google group
-        </a></li>
-    <li>IRC: #nameko on freenode</li>
-</ul>
+<p>
+Join the #Slack community group by adding your email address below.
+</p>
+
+<form id="signup-form" method="post" action="#">
+    <input type="email" name="email" id="email" placeholder="Email Address" />
+    <input type="submit" value="Get an invite" />
+</form>
+
+<script>
+    var stamplay_appid = "nameko";
+    var stamplay_webhookid = "invites";
+</script>
+<script src="https://drrjhlchpvi7e.cloudfront.net/libs/stamplay-js-sdk/1.2.5/stamplay.min.js"></script> <script src="js/main.js"></script>
+
 {% endblock content %}
