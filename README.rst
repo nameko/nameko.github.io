@@ -1,12 +1,6 @@
 Nameko project page
 ===================
 
-Code for `nameko.github.io <https://nameko.github.io>`_.
+The project page now lives at https://github.com/nameko/nameko.io.
 
-
-Updating
---------
-
-* edit ``source/*.html``
-* run ``build.py``
-* commit both sources and generated files in the root
+This repo remains so we can use Github pages to redirect the old URL to https://nameko.io.
